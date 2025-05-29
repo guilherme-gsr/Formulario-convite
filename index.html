@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Fomulario de Convite</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="main-content">
+        <div class="main">
+          <img  src="./assets/img/Background.png" alt="">
+
+          <div class="title-main">
+            <div class="icon-main">
+              <img src="assets/img/Logo (1).svg" alt="" />
+            </div>
+            <h1 class="logo">Festive</h1>
+            <p class="body-md">Crie um convite digital para o seu evento</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="aside-content">
+        <div class="aside">
+          <div class="form-content">
+            <h1 class="heading-md">Crie seu convite</h1>
+            <form action="" method="get" class="form">
+              <section class="event-form">
+
+                <div class="about-event">
+                    <img src="./assets/icons/calendar.svg" alt="">
+                    <p class="heading-sm">Sobre o evento</p>
+                </div>
+
+                <div class="form-about display-flex gap-16">
+                  <div class="form-name">
+            
+                    <label for="title-event" class="body-sm">Titulo</label>
+                    <input
+                      type="text"
+                      name="title-event"
+                      id="title-event"
+                      placeholder="Nome do evento"
+                      class="input-form"
+                    />
+                  
+                  
+                  
+                </div>
+
+                <div class="form-initial-end flex-row gap-16">
+                  <div class="display-flex flex-1 gap-12">
+                    <label for="initial-date" class="body-sm">Data de inicio</label>
+                    <input type="datetime-local" name="initial-date" id="initial-date" class="input-form text-color-body">
+                  </div>
+
+                  <div class="display-flex flex-1 gap-12">
+                    <label for="end-date" class="body-sm">Data de fim</label>
+                    <input type="datetime-local" name="end-date" id="end-date" class="input-form text-color-body">
+                  </div>
+                </div>
+
+                <div class="form-type-local">
+                  <div class="display-flex flex-1 gap-12">
+                    <label for="local" class="body-sm">local</label>
+                    <input type="text" name="local" id="local" class="input-form text-color-body" placeholder="Link ou endereço">
+                  </div>
+                </div>
+
+                <div class="flex-row gap-12">
+
+                  <div class="type-event display-flex gap-12">
+                  <label for="type-event" class="body-sm">Tipo</label>
+
+                  <div class="toggle-form flex-1">
+
+                  <input type="radio" id="presencial"  name="modo" checked></input>
+                  <label for="presencial">
+                    <div class="flex-row gap-8">
+                      <span><img src="./assets/icons/building-2.svg" alt=""></span>
+                  <span class="body-sm span-hover">Presencial</span>
+                    </div>
+                  
+
+                  </label>
+
+                  <input type="radio" id="online" name="modo" >
+                  <label for="online">
+                    <div class="flex-row gap-8">
+                      <span class="align-center"><img src="./assets/icons/video.svg" alt=""></span>
+
+                      <span class="body-sm span-hover">Online</span>
+
+                    </div>
+
+                </label>
+
+                </div>
+
+                </div>
+                
+                <div class="local display-flex gap-12 flex-1">
+                  <label for="local" class="body-sm">local</label>
+                  <input type="text" name="local" id="local" class="input-form text-color-body" placeholder="Link ou endereço">
+                </div>
+
+
+                </div>
+
+                
+                <div class="descricao display-flex gap-12 flex-1">
+                  <label for="descricao" class="body-sm">Descrição</label>
+                  <textarea name="descricao" id="descricao" class="input-form text-color-body body-sm" placeholder="Escreva sobre os detalhes do evento"></textarea>
+                </div>
+                
+
+                </div>
+
+              </section>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

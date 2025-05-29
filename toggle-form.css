@@ -1,0 +1,35 @@
+.toggle-form {
+  width: fit-content;
+  background-color: var(--input-color-base);
+  border: 2px solid var(--input-color-stroke);
+  display: flex;
+  border-radius: 8px;
+
+  & img {
+    width: 1rem;
+    height: 1rem;
+  }
+}
+
+.toggle-form input[type="radio"] {
+  display: none;
+}
+
+.toggle-form label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4px;
+  gap: 8px;
+  width: 130px;
+  color: white;
+}
+
+.toggle-form input[type="radio"]:checked + label {
+  background-color: #363b40;
+  border-radius: 8px;
+
+  & .span-hover {
+    font-weight: 700;
+  }
+}

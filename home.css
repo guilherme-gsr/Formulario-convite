@@ -1,0 +1,66 @@
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 34.7% 65.3%;
+  background-color: var(--shape-color-background);
+  overflow: hidden;
+}
+
+.main-content {
+  overflow: hidden;
+  padding-block: 1.25rem;
+  padding-left: 1.25rem;
+
+  & .main {
+    margin-inline: auto;
+    height: 100%;
+    position: relative;
+  }
+
+  & img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    border-radius: 1.25rem;
+  }
+}
+
+.aside-content {
+  overflow: auto;
+  padding: 1.25rem;
+
+  & .aside {
+    background-color: var(--shape-color-body);
+    margin-inline: auto;
+    border-radius: 1.25rem;
+  }
+}
+
+.main {
+  position: relative;
+
+  & .title-main {
+    position: absolute;
+    top: 2rem;
+    left: 4rem;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.title-main {
+  & h1 {
+    margin-bottom: 0.25rem;
+  }
+
+  & .icon-main {
+    margin-bottom: 1rem;
+
+    & img {
+      width: 3.5rem;
+      height: 3.5rem;
+    }
+  }
+}

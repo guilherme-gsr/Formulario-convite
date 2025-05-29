@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Leckerli+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+@import url("home.css");
+@import url("form.css");
+@import url("components.css");
+@import url("toggle-form.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --brand-light: #59b2ff;
+  --brand-mid: #3487cf;
+  --brand-dark: #1d6fb6;
+
+  --accent-color-purple: #b259ff;
+  --accent-color-fuschia: #ff59f9;
+  --accent-color-pink: #ff598b;
+  --accent-color-orange: #ff8b59;
+  --accent-color-yellow: #ffd659;
+  --accent-color-lime: #d6ff59;
+  --accent-color-green: #59ff91;
+  --accent-color-cyan: #59fff9;
+  --accent-color-navy: #6a59ff;
+
+  --feedback-color-danger: #ff5959;
+
+  --input-color-base: #1c1f21;
+  --input-color-stroke: #363b40;
+  --input-color-placeholder: #869198;
+
+  --shape-color-background: #131516;
+  --shape-color-body: #212427;
+  --shape-color-button: #2d3136;
+  --shape-color-hover: #383d42;
+
+  --text-color-body: #c8cdd7;
+  --text-color-heading: #f9f9f9;
+}
+
+.logo {
+  font-size: 65px;
+  line-height: normal;
+  font-weight: 400;
+  font-family: "Leckerli One", cursive;
+  color: var(--accent-color-pink);
+}
+
+.heading-md {
+  font-family: "Baloo 2", cursive;
+  font-size: 28px;
+  line-height: normal;
+  font-weight: bold;
+  color: var(--text-color-heading);
+}
+
+.heading-sm {
+  font-family: "Baloo 2", cursive;
+  font-size: 18px;
+  line-height: normal;
+  font-weight: bold;
+  color: var(--text-color-heading);
+}
+
+.body-md {
+  font-family: "Open Sans", sans-serif;
+  font-size: 25px;
+  line-height: normal;
+  font-weight: 600;
+  color: var(--text-color-heading);
+}
+
+.body-sm {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  line-height: normal;
+  font-weight: 400;
+  color: var(--text-color-body);
+}
+
+.body-xs {
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  line-height: normal;
+  font-weight: 600;
+}
+
+input,
+textarea {
+  outline: none;
+  color: var(--input-color-placeholder);
+}
