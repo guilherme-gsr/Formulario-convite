@@ -10,24 +10,25 @@
     <div class="container">
       <div class="main-content">
         <div class="main">
-          <img  src="./assets/img/Background.png" alt="">
-
-          <div class="title-main">
-            <div class="icon-main">
-              <img src="assets/img/Logo (1).svg" alt="" />
-            </div>
-            <h1 class="logo">Festive</h1>
-            <p class="body-md">Crie um convite digital para o seu evento</p>
-          </div>
+          <img src="./assets/img/Background.png" alt="">
         </div>
+
+        <div class="title-main">
+          <div class="icon-main">
+            <img src="assets/img/Logo (1).svg" alt="" />
+          </div>
+          <h1 class="logo">Festive</h1>
+          <p class="body-md">Crie um convite digital para o seu evento</p>
+        </div>
+
       </div>
 
       <div class="aside-content">
         <div class="aside">
           <div class="form-content">
             <h1 class="heading-md">Crie seu convite</h1>
-            <form action="" method="get" class="form">
-              <section class="event-form">
+            <form action="" method="get" class="form display-flex gap-48">
+              <section class="event-form display-flex gap-24">
 
                 <div class="about-event">
                     <img src="./assets/icons/calendar.svg" alt="">
@@ -76,22 +77,22 @@
 
                   <div class="toggle-form flex-1">
 
-                  <input type="radio" id="presencial"  name="modo" checked></input>
-                  <label for="presencial">
-                    <div class="flex-row gap-8">
-                      <span><img src="./assets/icons/building-2.svg" alt=""></span>
-                  <span class="body-sm span-hover">Presencial</span>
+                  <input type="radio" id="presencial"  name="modo" checked/>
+                  <label for="presencial" tabindex="0">
+                    <div class="flex-row gap-8 justify-center ">
+                      <img src="./assets/icons/building-2.svg" alt="icone-presencial">
+                  <div class="body-sm span-hover">Presencial</div>
                     </div>
                   
 
                   </label>
 
-                  <input type="radio" id="online" name="modo" >
-                  <label for="online">
-                    <div class="flex-row gap-8">
-                      <span class="align-center"><img src="./assets/icons/video.svg" alt=""></span>
+                  <input type="radio" id="online" name="modo" tabindex="0">
+                  <label for="online" tabindex="0">
+                    <div class="flex-row gap-8 justify-center">
+                      <img src="./assets/icons/video.svg" alt="">
 
-                      <span class="body-sm span-hover">Online</span>
+                      <div class="body-sm span-hover">Online</div>
 
                     </div>
 
@@ -112,15 +113,47 @@
                 
                 <div class="descricao display-flex gap-12 flex-1">
                   <label for="descricao" class="body-sm">Descrição</label>
-                  <textarea name="descricao" id="descricao" class="input-form text-color-body body-sm" placeholder="Escreva sobre os detalhes do evento"></textarea>
+                  <textarea name="descricao" id="descricao" height="136px "  width="100%" class="input-form text-color-body body-sm" placeholder="Escreva sobre os detalhes do evento"></textarea>
                 </div>
                 
 
                 </div>
+              </section>
+
+              <section class="personalization display-flex gap-24">
+
+                <div class="personalization display-flex gap-24">
+
+                  <div class="about-event ">
+                    <img src="./assets/icons/paintbrush-vertical.svg" alt="">
+                    <p class="heading-sm">Personalização</p>
+                  </div>
+                  
+
+                  <div class="personalization-form">
+                    <div class="bg-color-form display-flex gap">
+                      <label for="bg-color-form" class="body-sm">Cor de fundo</label>
+                      <div class="input-color flex-row gap-12 ">  
+                        <input type="radio" name="bg-color-form" id="bg-color-form"  value="#59B2FF" class="border-radius-50">
+                        <input type="radio" name="bg-color-form" id="bg-color-form" value="#6a59ff" class="border-radius-50">
+                        <input type="radio" name="bg-color-form" id="bg-color-form" value="#ff59f9" class="border-radius-50">
+                        <input type="radio" name="bg-color-form" id="bg-color-form" value="#ff598b" class="border-radius-50">
+                        <input type="radio" name="bg-color-form" id="bg-color-form" value="#ff8b59" class="border-radius-50">
+                        <input type="radio" name="bg-color-form" id="bg-color-form" value="#ffd659" class="border-radius-50">
+                        <input type="radio" name="bg-color-form" id="bg-color-form" value="#d6ff59" class="border-radius-50">
+                        <input type="radio" name="bg-color-form" id="bg-color-form" value="#59ff91" class="border-radius-50">
+                        <input type="radio" name="bg-color-form" id="bg-color-form" value="#59fff9" class="border-radius-50">
+                        <input type="radio" name="bg-color-form" id="bg-color-form" value="#6a59ff" class="border-radius-50">
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
               </section>
+
           </form>
-        </div>
+        </div>     
+        
       </div>
     </div>
   </body>

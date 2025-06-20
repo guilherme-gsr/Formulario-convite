@@ -23,13 +23,23 @@
   gap: 8px;
   width: 130px;
   color: white;
-}
+  border-radius: 0.5rem;
 
+  &:focus {
+    border: 1px solid var(--brand-light);
+    outline: none;
+  }
+}
 .toggle-form input[type="radio"]:checked + label {
   background-color: #363b40;
-  border-radius: 8px;
+  border-radius: 0.5rem;
 
   & .span-hover {
     font-weight: 700;
+  }
+
+  &:focus {
+    border: 1px solid var(--brand-light);
+    outline: none;
   }
 }

@@ -10,21 +10,28 @@
   overflow: hidden;
   padding-block: 1.25rem;
   padding-left: 1.25rem;
+  position: relative;
 
   & .main {
-    margin-inline: auto;
     height: 100%;
-    position: relative;
-  }
-
-  & img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    display: block;
     border-radius: 1.25rem;
+    position: relative;
+
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 1.25rem;
+    }
   }
+}
+
+.title-main {
+  position: absolute;
+  top: 2rem;
+  left: 4rem;
+  width: auto;
+  height: auto;
 }
 
 .aside-content {

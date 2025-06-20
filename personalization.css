@@ -1,0 +1,36 @@
+input[type="radio"] {
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 3px solid var(--shape-color-hover);
+  padding: 0;
+  cursor: pointer;
+
+  /* Remover estilos nativos */
+  -webkit-appearance: none;
+  appearance: none;
+
+  /* Remover contorno e sombras */
+  box-shadow: none !important;
+  outline: none !important;
+
+  /* Para navegadores que aplicam estilo via shadow DOM */
+  background: none;
+}
+
+input[type="radio"]::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+
+input[type="radio"]::-webkit-color-swatch {
+  border: none;
+  border-radius: 100%;
+}
+
+input[type="radio"]::-ms-color-swatch {
+  border: none;
+  border-radius: 100%;
+}
+
+textarea {
+  resize: none;
+}
