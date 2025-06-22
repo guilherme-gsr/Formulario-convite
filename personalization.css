@@ -1,7 +1,7 @@
 input[type="radio"] {
   width: 2.5rem;
   height: 2.5rem;
-  border: 3px solid var(--shape-color-hover);
+  border: 0.375rem solid var(--shape-color-hover);
   padding: 0;
   cursor: pointer;
 
@@ -14,23 +14,26 @@ input[type="radio"] {
   outline: none !important;
 
   /* Para navegadores que aplicam estilo via shadow DOM */
-  background: none;
-}
-
-input[type="radio"]::-webkit-color-swatch-wrapper {
-  padding: 0;
-}
-
-input[type="radio"]::-webkit-color-swatch {
-  border: none;
-  border-radius: 100%;
-}
-
-input[type="radio"]::-ms-color-swatch {
-  border: none;
-  border-radius: 100%;
+  position: relative;
 }
 
 textarea {
   resize: none;
+}
+
+input[type="radio"]::after {
+  content: "";
+  position: absolute;
+  width: 2.5rem;
+  height: 2.5rem;
+  right: -0.3625rem;
+  bottom: -0.375rem;
+  border-radius: 50%;
+  border: 0.125rem solid transparent;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+input[type="radio"]:checked::after {
+  border-color: var(--brand-light);
 }

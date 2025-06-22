@@ -73,3 +73,47 @@ textarea:focus,
 .semi-bold {
   font-weight: 600;
 }
+
+.accent-color-purple {
+  background-color: var(--accent-color-purple);
+}
+
+.accent-color-fuschia {
+  background-color: var(--accent-color-fuschia);
+}
+
+.accent-color-pink {
+  background-color: var(--accent-color-pink);
+}
+
+.accent-color-orange {
+  background-color: var(--accent-color-orange);
+}
+
+.accent-color-yellow {
+  background-color: var(--accent-color-yellow);
+}
+
+.accent-color-lime {
+  background-color: var(--accent-color-lime);
+}
+
+.accent-color-green {
+  background-color: var(--accent-color-green);
+}
+
+.accent-color-cyan {
+  background-color: var(--accent-color-cyan);
+}
+
+.accent-color-navy {
+  background-color: var(--accent-color-navy);
+}
+
+.accent-color-danger {
+  background-color: var(--feedback-color-danger);
+}
+
+.accent-color-brand-light {
+  background-color: var(--brand-light);
+}
