@@ -38,6 +38,10 @@ textarea:focus,
   align-items: center;
 }
 
+.wrap {
+  flex-wrap: wrap;
+}
+
 .flex-1 {
   flex: 1;
 }
@@ -64,6 +68,10 @@ textarea:focus,
 
 .border-radius-50 {
   border-radius: 100%;
+}
+
+.border-radius-8 {
+  border-radius: 0.5rem;
 }
 
 .text-color-body {
