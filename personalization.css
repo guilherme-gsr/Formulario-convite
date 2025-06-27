@@ -52,3 +52,23 @@ textarea {
 .theme {
   width: 35rem;
 }
+
+.input-inner {
+  width: 8.375rem;
+  height: 6.4375rem;
+  background-color: red;
+  border-radius: 0.5rem;
+
+  & img {
+    width: 7.875rem;
+    height: 4rem;
+  }
+
+  & input[type="radio"] {
+    display: none;
+  }
+
+  &:has(input[type="radio"]:checked) {
+    border: 2px solid blue;
+  }
+}
