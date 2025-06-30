@@ -5,6 +5,7 @@
 @import url("components.css");
 @import url("toggle-form.css");
 @import url("personalization.css");
+@import url("style-theme.css");
 
 * {
   margin: 0;
