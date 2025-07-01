@@ -3,4 +3,21 @@
   height: 2rem;
   background-color: red;
   border-radius: 9999px;
+
+  & input[type="radio"] {
+    display: none;
+  }
+}
+
+.switch-style-button {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 9999px;
+  display: inline-block;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="radio"]:checked + .switch-style-button {
+  background-color: var(--brand-light); /* sua cor ativa */
 }

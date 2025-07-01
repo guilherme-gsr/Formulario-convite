@@ -34,10 +34,20 @@ textarea:focus,
   margin-top: 0.0938rem;
 }
 
+.margin-4px {
+  margin-left: 0.25rem;
+}
+
+.margin-right-4px {
+  margin-right: 0.25rem;
+}
+
 .justify-center {
   align-items: center;
 }
-
+.space-between {
+  justify-content: space-between;
+}
 .wrap {
   flex-wrap: wrap;
 }
