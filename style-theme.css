@@ -1,8 +1,9 @@
 .toggle-switch {
   width: 4rem;
   height: 2rem;
-  background-color: red;
+  background-color: var(--input-color-base);
   border-radius: 9999px;
+  border: 2px solid var(--input-color-stroke);
 
   & input[type="radio"] {
     display: none;
@@ -18,6 +19,14 @@
   transition: background-color 0.3s ease;
 }
 
-input[type="radio"]:checked + .switch-style-button {
-  background-color: var(--brand-light); /* sua cor ativa */
+input[type="radio"]:checked + .dark {
+  background-color: var(--input-color-stroke);
+}
+
+input[type="radio"]:checked + .light {
+  background-color: white;
+}
+
+.toggle-switch:has(#switch-light:checked) {
+  background-color: var(--brand-light);
 }
