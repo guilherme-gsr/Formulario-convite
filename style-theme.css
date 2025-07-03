@@ -30,3 +30,21 @@ input[type="radio"]:checked + .light {
 .toggle-switch:has(#switch-light:checked) {
   background-color: var(--brand-light);
 }
+
+.dark-text,
+.light-text {
+  display: none;
+}
+
+.dark-light {
+  background-color: red;
+  width: 11rem;
+}
+
+.dark-light:has(#switch-dark:checked) .dark-text {
+  display: block;
+}
+
+.dark-light:has(#switch-light:checked) .light-text {
+  display: block;
+}
