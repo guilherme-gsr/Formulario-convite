@@ -37,7 +37,6 @@ input[type="radio"]:checked + .light {
 }
 
 .dark-light {
-  background-color: red;
   width: 11rem;
 }
 
@@ -47,4 +46,23 @@ input[type="radio"]:checked + .light {
 
 .dark-light:has(#switch-light:checked) .light-text {
   display: block;
+}
+
+.file-upload {
+  width: 7.4375rem;
+  height: 2.5rem;
+  color: transparent;
+  border: none;
+  background-image: url(./assets/icons/Button.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  cursor: pointer;
+}
+
+.native-file-input {
+  opacity: 0;
+  width: 0.1px;
+  height: 0.1px;
+  position: absolute;
 }
