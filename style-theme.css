@@ -57,12 +57,19 @@ input[type="radio"]:checked + .light {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+  display: inline-block;
   cursor: pointer;
 }
 
-.native-file-input {
-  opacity: 0;
-  width: 0.1px;
-  height: 0.1px;
-  position: absolute;
+input[type="file"] {
+  font-size: 0.875rem;
+  cursor: pointer;
+}
+
+input[type="file"]::-webkit-file-upload-button {
+  visibility: hidden;
+  width: 0;
+  padding: 0;
+  margin: 0;
+  border: none;
 }

@@ -31,7 +31,7 @@ textarea {
   border-radius: 50%;
   border: 0.125rem solid transparent;
   box-sizing: border-box;
-  transition: border-color 0.3s ease;
+  transition: border-color 0.5s ease;
 }
 
 .input-color > input[type="radio"]:checked::after {
