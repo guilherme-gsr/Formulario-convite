@@ -80,3 +80,7 @@ textarea {
     padding-top: 0.5rem;
   }
 }
+
+.contact-form {
+  width: 35rem;
+}

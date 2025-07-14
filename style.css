@@ -6,6 +6,7 @@
 @import url("toggle-form.css");
 @import url("personalization.css");
 @import url("style-theme.css");
+@import url("contactStyle.css");
 
 * {
   margin: 0;
