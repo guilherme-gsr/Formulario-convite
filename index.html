@@ -404,14 +404,27 @@
                 </div>
 
                 <div class="display-flex gap-12">
-                  <label for="name">Nome</label>
+                  <label for="name" class="body-sm">Nome</label>
                   <input type="text" placeholder="Nome completo" class="input-form" required>
 
-                  <div class="error">
+                  <div class="error gap-8">
                     <span class="icon-alert"></span>
                     <span class="text-alert">Campo obrigatório</span>
                   </div>
 
+                </div>
+
+                <div class="flex-row gap-16">
+                  <div class="display-flex gap-12 flex-1">
+                    <label for="email" class="body-sm">E-mail</label>
+                  <input type="email" class="input-form" placeholder="exemplo@gmail.com">
+                </div>
+
+                <div class="display-flex gap-12 flex-1">
+                  <label for="number" class="body-sm">Telefone</label>
+                  <input type="tel" class="input-form" placeholder="(34) 99999-9999">
+                </div>
+                  
                 </div>
 
               </section>

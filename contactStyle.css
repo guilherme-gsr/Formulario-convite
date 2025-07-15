@@ -27,3 +27,7 @@ input:invalid + .error {
   background-size: contain;
   background-position: center;
 }
+
+.text-alert {
+  color: var(--feedback-color-danger);
+}
