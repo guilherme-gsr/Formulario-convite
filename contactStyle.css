@@ -2,6 +2,14 @@
   border-color: var(--feedback-color-danger);
 }
 
+.contact-form {
+  width: 68.29%;
+}
+
+.event-form {
+  width: 68.29%;
+}
+
 .error {
   display: none;
 }
