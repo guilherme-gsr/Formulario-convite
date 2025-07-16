@@ -1,0 +1,70 @@
+.termos {
+  width: 68.29%;
+  padding-top: 2.5rem;
+  padding-bottom: 6rem;
+  border-top: 1px solid var(--input-color-stroke);
+  position: relative;
+  margin-bottom: 5rem;
+}
+
+.termos div {
+  padding: 0.25rem;
+}
+
+.custom-checkbox input[type="checkbox"] {
+  display: none;
+}
+
+.custom-checkbox {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  gap: 0.5rem;
+  user-select: none;
+}
+
+.custom-checkbox .checkmark {
+  background-image: url(./assets/icons/checkbox-border.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 1.25rem;
+  height: 1.25rem;
+  transition: 0.3s;
+}
+
+.custom-checkbox input[type="checkbox"]:checked + .checkmark {
+  background-image: url(./assets/icons/checkbox.svg);
+}
+
+.custom-checkbox a {
+  color: var(--brand-light);
+}
+
+.button {
+  position: absolute;
+  bottom: -0.2438rem;
+  right: -0.2437rem;
+
+  & button {
+    border: none;
+    background-color: var(--brand-dark);
+    color: var(--text-color-heading);
+    padding: 0.8125rem 1.25rem;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75rem;
+
+    & p {
+      font-size: 1rem;
+      font-weight: 500;
+    }
+
+    & span > img {
+      width: 1.25rem;
+      height: 1.25rem;
+    }
+  }
+}
